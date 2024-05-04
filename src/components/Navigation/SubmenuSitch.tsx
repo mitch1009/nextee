@@ -1,6 +1,6 @@
 import React from 'react'
-import { AdminData, ProfileData } from './MenuData'
 import CustomLink from './CustomLink'
+import { AdminData, ProfileData } from './MenuData'
 export const SubmenuSwitch = () => {
   return {
     profile: <CustomLink data={ProfileData} />,

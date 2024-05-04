@@ -1,10 +1,10 @@
-import { OnBoardingDetails } from '@/components/OnBoarding'
+import { appName } from '@/types/general'
 import React from 'react'
 
 function page() {
   return (
     <div>
-        <OnBoardingDetails/>
+        <h1>Welcome to {appName}</h1>
     </div>
   )
 }
