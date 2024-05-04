@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.4
+
+### Patch Changes
+
+- 6ccb776: fix tags extraction
+
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
 ### [0.0.3](https://github.com/mitch1009/witso/compare/nextee@0.0.2...nextee@0.0.3) (2024-05-04)
