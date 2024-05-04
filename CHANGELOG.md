@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](https://github.com/mitch1009/witso/compare/nextee@0.0.6...nextee@0.0.7) (2024-05-04)
+
+
+### Features
+
+* create migration.sql ([df0deec](https://github.com/mitch1009/witso/commit/df0deecf79e2ac1a7ea2c79f2af6797ba03dbf7b))
+
 ### [0.0.6](https://github.com/mitch1009/witso/compare/nextee@0.0.5...nextee@0.0.6) (2024-05-04)
 
 ### [0.0.5](https://github.com/mitch1009/witso/compare/nextee@0.0.4...nextee@0.0.5) (2024-05-04)
