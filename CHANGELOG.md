@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.11](https://github.com/mitch1009/witso/compare/nextee@0.0.10...nextee@0.0.11) (2024-05-04)
+
 ### [0.0.10](https://github.com/mitch1009/witso/compare/nextee@0.0.9...nextee@0.0.10) (2024-05-04)
 
 ### [0.0.9](https://github.com/mitch1009/witso/compare/nextee@0.0.8...nextee@0.0.9) (2024-05-04)
