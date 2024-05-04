@@ -1,1 +1,0 @@
-export  { name as appName } from '@/root/package.json'

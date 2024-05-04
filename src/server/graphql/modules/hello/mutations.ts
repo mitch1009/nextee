@@ -1,5 +1,5 @@
-import { appName } from "./types";
-
-export const HelloMutation = {
-    hello: (_:unknown, args: {name: string}) => `Hello ${args.name} from ${appName} platform`
+import { HelloService } from "@/server/core/hello";
+import { IHelloSchema } from "@/server/core/hello/types";
+export const HelloMutations = {
+    hello: (_: unknown, args: IHelloSchema) => HelloService.helloMutation(args)
 }

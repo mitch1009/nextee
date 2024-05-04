@@ -1,5 +1,6 @@
-import { appName } from "./types";
+import { HelloService } from "@/server/core/hello";
+import { IHelloSchema } from "@/server/core/hello/types";
 
 export const HelloQueries = {
-    hello: () => `Hello from ${appName} platform`
+    hello: (__: unknown, args: IHelloSchema) => HelloService.hello(args)
 }
