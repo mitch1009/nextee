@@ -13,7 +13,6 @@ const {data} = await getHelloData()
           <GraphqlPage key={2} data={data} />
           <TrpcPage />
         </div>
-        
       </HomePage>
     </main>
   );
