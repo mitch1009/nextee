@@ -12,6 +12,7 @@ permissions:
 
 env:
   AUTH_SECRET: ${{ secrets.AUTH_SECRET }}
+  AU TH_URL: ${{ secrets.AUTH_URL }}
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -42,6 +43,7 @@ jobs:
           echo $TAG
           echo "
             AUTH_SECRET=${AUTH_SECRET}
+            AUTH_URL=${AUTH_URL}
               " >.env
       - name: Build and push
         run: |
