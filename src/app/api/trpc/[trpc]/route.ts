@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
 import { fetchRequestHandler } from "@trpc/server/adapters/fetch";
-import { auth, db } from "@/lib";
 import { appRouter } from "@/server/main";
 import { createTRPCContext } from "@/server/context";
 
