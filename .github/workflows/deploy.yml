@@ -43,8 +43,7 @@ jobs:
           echo $TAG
           echo "
             AUTH_SECRET=${AUTH_SECRET}
-            AUTH_URL=${AUTH_URL}
-              " >.env
+            AUTH_URL=${AUTH_URL}" >.env
       - name: Build and push
         run: |
           docker build -t ghcr.io/${{ github.repository }}:${{ steps.vars.outputs.tag }} .
