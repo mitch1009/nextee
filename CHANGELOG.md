@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.16](https://github.com/mitch1009/witso/compare/nextee@0.0.15...nextee@0.0.16) (2024-05-04)
+
+
+### Features
+
+* create client.ts, src/server/graphql/modules/hello/mutations/index.ts and server.ts ([a0404dd](https://github.com/mitch1009/witso/commit/a0404dd10c54fcabf14158a7d49c752592ffa1d4))
+* create client.ts, src/server/graphql/modules/hello/queries/index.ts and server.ts ([f8a2dcb](https://github.com/mitch1009/witso/commit/f8a2dcb591c0cae03a58a56402dbde585137dc88))
+
 ### [0.0.15](https://github.com/mitch1009/witso/compare/nextee@0.0.14...nextee@0.0.15) (2024-05-04)
 
 
