@@ -1,6 +1,6 @@
 {
   "name": "nextee",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "private": true,
   "scripts": {
     "dev": "next dev --port 7766",
@@ -10,6 +10,7 @@
     "cs": "changeset",
     "vs": "changeset version",
     "tag": "changeset tag",
+    "rel": "standard-version --tag-prefix \"$(node -p \"require('./package.json').name\")@\" && git push --follow-tags",
     "release": "standard-version --first-release --tag-prefix \"$(node -p \"require('./package.json').name\")@\" && git push --follow-tags",
     "mg": "npx prisma migrate dev && npx prisma generate",
     "mg:prod": "npx prisma migrate deploy && npx prisma generate"
