@@ -13,7 +13,8 @@
     "rel": "standard-version --tag-prefix \"$(node -p \"require('./package.json').name\")@\" && git push --follow-tags",
     "release": "standard-version --first-release --tag-prefix \"$(node -p \"require('./package.json').name\")@\" && git push --follow-tags",
     "mg": "npx prisma migrate dev && npx prisma generate",
-    "mg:prod": "npx prisma migrate deploy && npx prisma generate"
+    "mg:prod": "npx prisma db push && npx prisma generate",
+    "postinstall": "pnpm mg:prod"
   },
   "dependencies": {
     "@apollo/server": "^4.10.4",
