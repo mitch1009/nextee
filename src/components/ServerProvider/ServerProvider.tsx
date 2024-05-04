@@ -14,7 +14,6 @@ import superjson from 'superjson'
  */
 const ServerProvider = ({ children, url }: { url: string, children: React.ReactNode }) => {
     const [queryCliet] = useState(() => new QueryClient())
-    console.log(url)
     const [trpcClientInstance] = useState(trpClient.createClient({
         links: [
             httpBatchLink({
