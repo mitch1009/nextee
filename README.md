@@ -1,6 +1,6 @@
 # Nextee tools
 
-![nextee](/public/logo.png)
+![nextee](https://github.com/mitch1009/nextee/blob/main/public/logo.svg?raw=true)
 ## Getting Started
 
 ```bash
