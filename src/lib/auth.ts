@@ -1,9 +1,7 @@
 import { PrismaAdapter } from "@auth/prisma-adapter"
 import NextAuth, { DefaultSession } from "next-auth"
-import azureAd from "next-auth/providers/microsoft-entra-id"
 import Google from "next-auth/providers/google"
 import { db } from "./database"
-import { env } from "process"
 
 declare module "next-auth" {
   interface Session {
@@ -14,7 +12,7 @@ declare module "next-auth" {
   }
 }
 export const { handlers, signIn, signOut, auth } = NextAuth({
-  providers: [env.NODE_ENV === "development" ? Google : azureAd],
+  providers: [ Google],
   pages: {
     newUser:"/welcome",
     signIn: "/auth/signin",
