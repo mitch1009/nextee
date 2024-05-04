@@ -1,5 +1,5 @@
 import ActionsPage from "@/components/Hello/ActionsPage";
-import GraphqlPage from "@/components/Hello/GraphqlPage";
+import {GraphqlPage} from "@/components/Hello/GraphqlPage";
 import {TrpcPage} from "@/components/Hello/TrpcPage";
 import { HomePage } from "@/components/Home";
 
