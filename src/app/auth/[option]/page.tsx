@@ -1,5 +1,5 @@
 import React from 'react'
-import { RenderAuth } from '../_helpers/RenderAuth'
+import { RenderAuth } from '@/components/Auth'
 
 function page() {
   return (

@@ -1,1 +1,0 @@
-export declare type TAuthOption = "signin" | "signup" | "verify-request" | "forgot-password" | "reset-password"
