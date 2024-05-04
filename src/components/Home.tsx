@@ -3,7 +3,6 @@ import Image from "next/image";
 import Logo from "@/root/public/logo.svg"
 import { redirect } from 'next/navigation';
 import Link from "next/link";
-import { HelloTest } from "./Hello";
 
 export const HomePage = ({children}:any) => {
   return (
