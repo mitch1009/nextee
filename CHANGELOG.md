@@ -4,7 +4,6 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### 0.0.1 (2024-05-04)
 
-
 ### Features
 
 * create HelloTest.tsx ([59f32ce](https://github.com/mitch1009/witso/commit/59f32cefbf6289e63388c84a4067013614671773))
