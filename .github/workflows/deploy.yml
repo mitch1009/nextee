@@ -9,7 +9,6 @@ permissions:
   packages: write
   id-token: write
   pull-requests: write
-  
 
 env:
   AUTH_SECRET: ${{ secrets.AUTH_SECRET }}
