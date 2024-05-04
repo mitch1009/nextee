@@ -13,6 +13,7 @@ permissions:
 env:
   AUTH_SECRET: ${{ secrets.AUTH_SECRET }}
   AU TH_URL: ${{ secrets.AUTH_URL }}
+  NEXT_PUBLIC_URL: ${{ secrets.NEXT_PUBLIC_URL }}
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -43,7 +44,9 @@ jobs:
           echo $TAG
           echo "
             AUTH_SECRET=${AUTH_SECRET}
-            AUTH_URL=${AUTH_URL}" >.env
+            AUTH_URL=${AUTH_URL}
+            NEXT_PUBLIC_URL=${NEXT_PUBLIC_URL}
+            ">.env
       - name: Build and push
         run: |
           docker build -t ghcr.io/${{ github.repository }}:${{ steps.vars.outputs.tag }} .
