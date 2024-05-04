@@ -1,6 +1,5 @@
-
-import { helloRoute } from './routes';
-import {  procedure, router } from './trpc'
+import { router } from "./trpc";
+import { helloRoute } from "./routes/hello";
 
 export const appRouter = router({
     main: helloRoute,

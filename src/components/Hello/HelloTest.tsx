@@ -1,5 +1,5 @@
 'use client'
-import { trpClient } from '@/server/client'
+import { trpClient } from '@/server/trpc/client'
 import React from 'react'
 
 export const HelloTest = ({option}: any) => {

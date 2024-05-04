@@ -1,4 +1,4 @@
-import { procedure, router } from "@/server/trpc";
+import { procedure, router } from "@/server/trpc/trpc";
 import { HelloService } from "./service";
 import { z } from "zod";
 export const helloRoute = router({
