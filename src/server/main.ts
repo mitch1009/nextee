@@ -1,9 +1,10 @@
 
 import { helloRoute } from './routes';
-import {  router } from './trpc'
+import {  procedure, router } from './trpc'
 
 export const appRouter = router({
-    hello: helloRoute
+    main: helloRoute,
+    hey: procedure.query(() => 'hello')
 })
 
 export type AppRouter = typeof appRouter;
