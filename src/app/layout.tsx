@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import {env} from "process";
+import ServerProvider from "@/components/ServerProvider/ServerProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -13,9 +15,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const url = env.AUTH_URL
   return (
-    <html lang="en" className="bg-gray-50">
-      <body className={inter.className}>{children}</body>
-    </html>
+    <ServerProvider url={`${url}/api/trpc`}>
+      <html lang="en" className="bg-gray-50">
+        <body className={inter.className}>{children}</body>
+      </html>
+    </ServerProvider>
   );
 }
