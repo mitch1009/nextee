@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.15](https://github.com/mitch1009/witso/compare/nextee@0.0.14...nextee@0.0.15) (2024-05-04)
+
+
+### Features
+
+* create apollo.config.ts ([6219dd6](https://github.com/mitch1009/witso/commit/6219dd63c0f38472a149f381dfb118af0d0b2c57))
+* modify auth components ([c8a5f18](https://github.com/mitch1009/witso/commit/c8a5f18e6b0139276e3d15d03c29f3995c185a86))
+
 ### [0.0.14](https://github.com/mitch1009/witso/compare/nextee@0.0.13...nextee@0.0.14) (2024-05-04)
 
 ### [0.0.13](https://github.com/mitch1009/witso/compare/nextee@0.0.12...nextee@0.0.13) (2024-05-04)
