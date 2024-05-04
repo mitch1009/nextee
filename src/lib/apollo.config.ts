@@ -6,7 +6,7 @@ export const { getClient } = registerApolloClient(() => {
   return new ApolloClient({
     cache: new InMemoryCache(),
     link: new HttpLink({
-      uri: `${env.AUTH_URL}/api/graphql`,
+      uri: `${env.NEXT_PUBLIC_URL}/api/graphql`,
     }),
   });
 });
