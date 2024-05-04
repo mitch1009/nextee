@@ -12,6 +12,7 @@ permissions:
 
 env:
   AUTH_SECRET: ${{ secrets.AUTH_SECRET }}
+  AUTH_URL: ${{ secrets.AUTH_URL }}
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -40,7 +41,10 @@ jobs:
           TAG=${TAG#*@} # This line extracts the part after the '@' symbol
           echo ::set-output name=tag::$TAG
           echo $TAG
-          echo "AUTH_SECRET=${AUTH_SECRET}" >.env
+          echo "
+            AUTH_SECRET=${AUTH_SECRET}
+            AUTH_URL=${AUTH_URL}
+              " >.env
       - name: Build and push
         run: |
           docker build -t ghcr.io/${{ github.repository }}:${{ steps.vars.outputs.tag }} .
