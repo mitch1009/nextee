@@ -12,7 +12,7 @@ import {
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 import { useParams, usePathname } from 'next/navigation'
-import { MAIN_NAVIGATION_DATA, MainMenudata } from './MenuData'
+import { MAIN_NAVIGATION_DATA } from './MenuData'
 import { SubmenuSwitch } from './SubmenuSitch'
 import { INavigationLinks } from './NavigationDto'
 
