@@ -1,5 +1,9 @@
-import { UserIcon, HomeIcon,  AdjustmentsHorizontalIcon, BellAlertIcon, ChartBarIcon, CircleStackIcon, PencilSquareIcon, ShareIcon, WrenchIcon, BriefcaseIcon, ChartPieIcon, ChatBubbleLeftRightIcon, DocumentArrowUpIcon, DocumentIcon, ExclamationCircleIcon, FireIcon, LightBulbIcon, MagnifyingGlassPlusIcon, NewspaperIcon, PhotoIcon, QuestionMarkCircleIcon, SpeakerWaveIcon, Cog6ToothIcon } from '@heroicons/react/24/outline'
-import {  INavigationProps } from './NavigationDto'
+import {
+    UserIcon, HomeIcon, AdjustmentsHorizontalIcon,
+    BellAlertIcon, PencilSquareIcon, ShareIcon, WrenchIcon,
+    NewspaperIcon, Cog6ToothIcon
+} from '@heroicons/react/24/outline'
+import { INavigationProps } from './NavigationDto'
 
 export const userNavigation = [
     { title: 'Your profile', href: '/uzar/profile' },
@@ -7,7 +11,7 @@ export const userNavigation = [
 ]
 
 
- const ProfileData = [
+const ProfileData = [
     { title: "Edit Profile", href: '/uzar/profile/edit-profile ', icon: PencilSquareIcon },
     { title: "Social Media", href: '/uzar/profile/social-media', icon: ShareIcon },
     { title: "Change Password", href: '/uzar/profile/change-password', icon: WrenchIcon },
@@ -23,11 +27,11 @@ export const MAIN_NAVIGATION_DATA: INavigationProps = {
 
     },
     admin: {
-        home: { href: "/uzar", title: "News Feed", icon: NewspaperIcon},
+        home: { href: "/uzar", title: "News Feed", icon: NewspaperIcon },
         settings: { href: "/uzar/settings", title: "News Feed", icon: Cog6ToothIcon },
         users: { href: "/uzar/users", title: "Profile", icon: UserIcon, submenu: ProfileData },
     }
-   
+
 }
 
 export interface IMenuLinks {
