@@ -36,8 +36,10 @@ jobs:
       - name: get the tag and set is as the image version
         id: vars
         run: |
-          echo ::set-output name=tag::${GITHUB_REF#refs/*/}
-          echo ${GITHUB_REF#refs/*/}
+          TAG=${GITHUB_REF#refs/*/}
+          TAG=${TAG#*@} # This line extracts the part after the '@' symbol
+          echo ::set-output name=tag::$TAG
+          echo $TAG
           echo "AUTH_SECRET=${AUTH_SECRET}" >.env
       - name: Build and push
         run: |
