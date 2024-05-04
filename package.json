@@ -17,6 +17,8 @@
     "postinstalld": "pnpm mg:prod"
   },
   "dependencies": {
+    "@apollo/client": "3.10.0-rc.1",
+    "@apollo/experimental-nextjs-app-support": "^0.10.0",
     "@apollo/server": "^4.10.4",
     "@as-integrations/next": "^3.0.0",
     "@auth/prisma-adapter": "^2.0.0",
