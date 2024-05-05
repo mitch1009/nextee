@@ -1,6 +1,9 @@
 # Nextee tools
 
 ![nextee](https://github.com/mitch1009/nextee/blob/main/public/logo.svg?raw=true)
+
+
+[![Nextee Template Version](https://img.shields.io/github/v/release/mitch1009/nextee.svg)](https://github.com/mitch1009/nextee/releases)
 ## Getting Started
 
 ```bash

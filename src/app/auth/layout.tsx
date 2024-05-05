@@ -1,14 +1,16 @@
-import { INexteeConfig, themeConfig } from '@/root/config'
+import { clx } from '@/lib'
 import React from 'react'
-
+import "./styles.css"
+import Image    from 'next/image'
+import { INexteeConfig, themeConfig } from '@/config'
 function layout({ children }: any) {
-    const config: Partial<INexteeConfig> = themeConfig()
+    const {auth}: Partial<INexteeConfig>| INexteeConfig= themeConfig()
     return (
-        <div className='grid gid-cols-3'>
-            <div className="col-span-1">
-                <pre>
-                    {JSON.stringify(config, null, 2)}
-                </pre>
+        <div className='grid grid-cols-4'>
+
+            <div className={clx(auth?.layout==='image-left' ? 'order-first' : 'order-last','col-span-2  min-h-screen h-screen')}>
+                <img alt="side image"  src="@/images/im.png"/>
+                <p>Exposed</p>
             </div>
             <div className="col-span-2">{children}</div>
         </div>
