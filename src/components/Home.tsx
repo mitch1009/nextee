@@ -19,9 +19,10 @@ export const HomePage = ({ children }: any) => {
           />
         </div>
         <p className='text-2xl'>Welcome, Login <Link className="underline text-yellow-500" href="/auth/signin">here</Link></p>
-    
+
         <div className="nedds">
           you will need the following variables in your env file. refer to example.env file
+          <pre>
             <code>
               {`
               DATABASE_URL=dburl
@@ -29,11 +30,12 @@ export const HomePage = ({ children }: any) => {
               AUTH_URL=authirl
               TRPC_URL=$\{AUTH_URL}/api/trpc
               `}
-          </code>
+            </code>
+          </pre>
         </div>
       </div>
       <div className="bg-gray-500 m-8 p-8">
-        
+
         {children}
       </div>
     </div>
