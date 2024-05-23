@@ -25,10 +25,10 @@ export const HomePage = ({ children }: any) => {
           <pre>
             <code>
               {`
-              DATABASE_URL=dburl
-              AUTH_SECRET=secret
-              AUTH_URL=authirl
-              TRPC_URL=$\{AUTH_URL}/api/trpc
+                DATABASE_URL=dburl
+                AUTH_SECRET=secret
+                AUTH_URL=authirl
+                TRPC_URL=$\{AUTH_URL}/api/trpc
               `}
             </code>
           </pre>
