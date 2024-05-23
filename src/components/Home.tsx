@@ -27,7 +27,7 @@ export const HomePage = ({ children }: any) => {
               {`
                 DATABASE_URL=dburl
                 AUTH_SECRET=secret
-                AUTH_URL=authirl
+                AUTH_URL=authurl
                 TRPC_URL=$\{AUTH_URL}/api/trpc
               `}
             </code>
