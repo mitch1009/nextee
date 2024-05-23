@@ -4,7 +4,7 @@ import Logo from "../../public/logo.svg"
 import { redirect } from 'next/navigation';
 import Link from "next/link";
 
-export const HomePage = ({children}:any) => {
+export const HomePage = ({ children }: any) => {
   return (
     <div className="sm:grid sm:grid-cols-2 sm:min-h-screen">
       <div className="e">
@@ -19,10 +19,24 @@ export const HomePage = ({children}:any) => {
           />
         </div>
         <p className='text-2xl'>Welcome, Login <Link className="underline text-yellow-500" href="/auth/signin">here</Link></p>
+    
+        <div className="nedds">
+          you will need the following variables in your env file. refer to example.env file
+          <pre>
+            <code>
+              {`
+              DATABASE_URL=dburl
+              AUTH_SECRET=secret
+              AUTH_URL=authirl
+              TRPC_URL=$\{AUTH_URL\}/api/trpc
+              `}
+            </code>
+          </pre>
+        </div>
       </div>
       <div className="bg-gray-500 m-8 p-8">
-    
-      {children}
+        
+        {children}
       </div>
     </div>
   )
