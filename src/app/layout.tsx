@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   const url = env.TRPC_URL
   return (
-    <ServerProvider url={`${url}/api/trpc`}>
+    <ServerProvider url={`${url}`}>
       <html lang="en" className="bg-gray-50">
         <body className={inter.className}>{children}</body>
       </html>
