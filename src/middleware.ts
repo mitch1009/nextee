@@ -10,16 +10,6 @@ export default auth(async (req) => {
   }
 
   // Implement login to allow some origins to access data on this app
-  if (req.headers.get("origin")) {
-    const allowedOrigins = (env.ALLOWED_ORIGINS ?? "").split(",");
-    const origin = req.headers.get("origin") ?? "";
-    if (allowedOrigins.includes(origin)) {
-      const session = (await auth()) as Session;
-      if (!session) {
-        return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-      }
-    }
-  }
 });
 
 export const config = {
