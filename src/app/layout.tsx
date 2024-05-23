@@ -15,7 +15,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const url = env.AUTH_URL
+  const url = env.TRPC_URL
   return (
     <ServerProvider url={`${url}/api/trpc`}>
       <html lang="en" className="bg-gray-50">
