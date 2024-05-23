@@ -22,7 +22,6 @@ export const HomePage = ({ children }: any) => {
     
         <div className="nedds">
           you will need the following variables in your env file. refer to example.env file
-          <pre>
             <code>
               {`
               DATABASE_URL=dburl
@@ -30,8 +29,7 @@ export const HomePage = ({ children }: any) => {
               AUTH_URL=authirl
               TRPC_URL=$\{AUTH_URL}/api/trpc
               `}
-            </code>
-          </pre>
+          </code>
         </div>
       </div>
       <div className="bg-gray-500 m-8 p-8">
